@@ -34,6 +34,9 @@ app.use('/productosInsert', productosInsertRoutes);
 const usuariosRoutes = require('./routes/usuarios');
 app.use('/usuarios', usuariosRoutes); 
 
+const ventasRoutes = require('./routes/ventas');
+app.use('/ventas', ventasRoutes);
+
 // Iniciar servidor
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
